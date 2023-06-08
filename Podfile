@@ -7,5 +7,6 @@ target 'MoyaExample' do
 
   # Pods for MoyaExample
 	pod 'Moya'
+	pod 'Kingfisher'
 
 end

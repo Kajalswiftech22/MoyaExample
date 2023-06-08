@@ -7,7 +7,6 @@
 
 import Foundation
 import Moya
-import CryptoKit
 
 public enum Marvel {
   // 1
@@ -21,13 +20,13 @@ public enum Marvel {
 extension Marvel: TargetType {
   // 1
   public var baseURL: URL {
-    return URL(string: "https://gateway.marvel.com/v1/public")!
+    return URL(string: "https://api.themoviedb.org/3/")!
   }
 
   // 2
   public var path: String {
     switch self {
-    case .comics: return "/comics"
+    case .comics: return "search/movie"
     }
   }
 
@@ -45,29 +44,17 @@ extension Marvel: TargetType {
 
   // 5
     public var task: Task {
-        
-      let ts = "\(Date().timeIntervalSince1970)"
-      // 1
-        
-      let hash = (ts + Marvel.privateKey + Marvel.publicKey).md5
-      
-      // 2
-      let authParams = ["apikey": Marvel.publicKey, "ts": ts, "hash": hash]
       
       switch self {
       case .comics:
         // 3
         return .requestParameters(
           parameters: [
-            "format": "comic",
-            "formatType": "comic",
-            "orderBy": "-onsaleDate",
-            "dateDescriptor": "lastWeek",
-            "limit": 50],
+            "api_key": "4f593a1326880ff31e844e8adafefeb8",
+            "query": "all"],
           encoding: URLEncoding.default)
       }
     }
-
 
   // 6
   public var headers: [String: String]? {
@@ -78,13 +65,4 @@ extension Marvel: TargetType {
   public var validationType: ValidationType {
     return .successCodes
   }
-}
-
-extension String {
-    var md5: String {
-        let inputData = Data(self.utf8)
-        let hashedData = Insecure.MD5.hash(data: inputData)
-        let hashString = hashedData.map { String(format: "%02hhx", $0) }.joined()
-        return hashString
-    }
 }

@@ -9,10 +9,10 @@ import UIKit
 
 class ComicsTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var comicsTitleLabel: UILabel!
-    @IBOutlet weak var comicsDescLabel: UILabel!
+    @IBOutlet weak var movieTitleLabel: UILabel!
+    @IBOutlet weak var movieDescription: UILabel!
+    @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var imageFirst: UIImageView!
-    @IBOutlet weak var imageSecond: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

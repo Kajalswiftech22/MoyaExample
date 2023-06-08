@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3756093F-C0B2-41DD-A5EE-8F1CCDE2C5A9"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3BA58AAC-84CA-4133-9693-45AADD433D4E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoyaExample/ComicsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "textFieldDidChange(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3BA58AAC-84CA-4133-9693-45AADD433D4E - 6875d136292bb9f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoyaExample.ComicsViewController.textFieldDidChange(__C.UITextField) -&gt; ()"
+                  moduleName = "MoyaExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kajol/Documents/MoyaExample/MoyaExample/ComicsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "576">
+               </Location>
+               <Location
+                  uuid = "3BA58AAC-84CA-4133-9693-45AADD433D4E - 6875d136292bb9f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoyaExample.ComicsViewController.textFieldDidChange(__C.UITextField) -&gt; ()"
+                  moduleName = "MoyaExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kajol/Documents/MoyaExample/MoyaExample/ComicsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "832">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
